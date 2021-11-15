@@ -6,6 +6,7 @@ metadata:
   name: bgd
   namespace: bgd
 spec:
+  host: bgd.apps.reinvent.aws.mobb.ninja
   port:
     targetPort: 8080
   to:
