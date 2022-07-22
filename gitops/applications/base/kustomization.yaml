@@ -6,4 +6,4 @@ namespace: openshift-gitops
 resources:
 - bgd.yaml
 - welcome-php.yaml
-#- quarkus-subchart.yaml
+- pact-broker-helm.yaml
