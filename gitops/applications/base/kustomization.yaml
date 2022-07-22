@@ -5,3 +5,5 @@ namespace: openshift-gitops
 
 resources:
 - bgd.yaml
+- welcome-php.yaml
+#- quarkus-subchart.yaml

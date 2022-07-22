@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-bgd
+  name: app-welcome-php
 spec:
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: apps/bgd/overlays/bgdk/
+    path: apps/welcome-php/overlays/syncwaves-and-hooks/
     repoURL: https://github.com/rh-mobb/gitops-bgd-app
     targetRevision: main
   syncPolicy:
@@ -21,6 +21,6 @@ spec:
         namespace: openshift-gitops
         server: https://kubernetes.default.svc
       source:
-        path: apps/bgd/overlays/bgdk/
+        path: apps/welcome-php/overlays/syncwaves-and-hooks/
         repoURL: https://github.com/rh-mobb/gitops-bgd-app
         targetRevision: main
